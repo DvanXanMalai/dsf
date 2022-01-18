@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+    --width: 250px;
+    --height: 450px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.landing {
+    background: url(/images/desktop/image-hero.jpg) rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 95vh;
+    
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 8rem 10rem 8rem;
+}
+.nav-bar {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+.nav-links {
+font-family: 'Alata';
+color: white;
+font-size: 1rem;
+text-decoration: none;
+}
+.hero-text {
+    font-family: 'Josefin Sans',sans-serif;
+    border: 2px solid white;
+    font-size: 4rem;
+    max-width: 550px;
+    padding: 1.5rem;
+}
+.hero-content {
+    display: flex;
+    padding: 0 0 0 8rem;
+}
+.burger {
+    background: transparent;
+    border: none;
+    display: none;
+    transition: 300ms linear;
+}
+.interactive-container {
+    padding: 8rem;
+}
+.interactive {
+    display: grid;
+    grid-template-columns: repeat(6,1fr)
+}
+.interactive-img {
+    grid-column: 1 / 3;
+}
+.interactive-text {
+    grid-column: 4 / -1;
+    background-color: white;
+    align-self: flex-end;
+    padding: 3rem;
+
+}
+.interactive-img, .interactive-text {
+    grid-row: 1 / 2;
+}
+
+.interactive-h1{
+    font-family: 'Josefin Sans',sans-serif;
+    color: black;
+    max-width: 80%;
+    font-size: 2.7rem;
+    line-height: 1.2;
+}
+.interactive-p{
+    padding-top: 1.5rem;
+    color: gray;
+    font-family: 'Alata',sans-serif;
+    line-height: 1.7;
+}
+.creations-main {
+    margin:0;
+    padding:0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+.earth {
+    background: url(/images/desktop/image-deep-earth.jpg) rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--width);
+    height: var(--height);
+}
+.arcade {
+    background: url(/images/desktop/image-night-arcade.jpg) rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--width);
+    height: var(--height);
+}
+.soccer {
+    background: url(/images/desktop/image-soccer-team.jpg) rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--width);
+    height: var(--height);
+}
+.grid {
+    background: url(/images/desktop/image-grid.jpg) rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--width);
+    height: var(--height);
+}
+.above {
+    background: url(/images/desktop/image-from-above.jpg) rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--width);
+    height: var(--height);
+}
+.pocket {
+    background: url(/images/desktop/image-pocket-borealis.jpg) rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--width);
+    height: var(--height);
+}
+.curosity {
+    background: url(/images/desktop/image-curiosity.jpg) rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--width);
+    height: var(--height);
+}
+.fisheye {
+    background: url(/images/desktop/image-fisheye.jpg) rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--width);
+    height: var(--height);
+}
+.creations {
+    padding: 8rem;
+    height: 100%
+    ;
+}
+.creations-elements {
+    position: relative;
+}
+.creations-text {
+    font-family: 'Josefin Sans';
+    font-size: 1.7rem;
+    font-weight: lighter;
+    width: 50%;
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+}
+.top-section {
+    display: flex;
+    justify-content: space-between;
+}
+.top-section h1 {
+    color: black;
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2rem;
+}
+.see-all {
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    background: transparent;
+    border: 2px solid rgb(79, 79, 79);
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 130px;
+    font-weight: bold;
+}
+
+@media(max-width: 760px){
+    .header {
+        flex-direction: column;
+        transition: 400ms ease;
+    }
+    .burger {
+        position: absolute;
+        top:15%;
+        right: 10%;
+        display: flex;
+    }
+    .nav-bar {
+        flex-direction: column;
+        display: none;
+    }
+    .display {
+        display: flex;
+    }
+    .nav-links {
+        font-family: 'Josefin Sans',sans-serif;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+    }
+    .header {
+        height: 100vh;
+    }
+    .menu-header {
+        background-color: black;
+        transition: 400ms linear;
+    }
+}
